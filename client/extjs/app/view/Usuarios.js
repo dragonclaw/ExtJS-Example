@@ -1,7 +1,7 @@
 Ext.define('Demo.view.Usuarios',{
-
+    extend: 'Ext.tree.Panel',
     title: 'Usuarios',
-    xtype: 'grid',
+    xtype: 'Usuarios',
     store: {
     fields:['name', 'email', 'phone'],
         data:[

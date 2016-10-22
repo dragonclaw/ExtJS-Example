@@ -19,7 +19,8 @@ Ext.define('Demo.Application', {
         'FormUpload',
         'TreeActions',
         'Cookies',
-        'Metadata'
+        'Metadata',
+        'Usuarios'
     ],
 
     controllers: [
