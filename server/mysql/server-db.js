@@ -1,4 +1,4 @@
-/* var mysql = require('mysql');
+ var mysql = require('mysql');
 var cfg = require('./db-config');
 
 function MySQL(config) {
@@ -54,14 +54,14 @@ function MySQL(config) {
     }
 }
 
-global.App.database = new MySQL(cfg);*/
+global.App.database = new MySQL(cfg);
 
-var cfg = require('./db-config');
+/*var cfg = require('./db-config');
 var Sequelize = require('sequelize');
 
 function sequelize() {
 
-    this.connection = null;
+    var vm=this;
 
     this.connect = function(){
         this.connection = new Sequelize('Demo', 'root', 'root', {
@@ -69,8 +69,8 @@ function sequelize() {
             dialect: 'mysql'
         });
 
-        return this.connection;
+        return vm.connection;
     };
 }
 
-global.App.database = new sequelize();
+global.App.database = new sequelize();*/
