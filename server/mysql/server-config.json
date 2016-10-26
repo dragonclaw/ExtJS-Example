@@ -9,7 +9,7 @@
     "sessionSecret": "vdW3F6y3506h",
     "enableCORS": true,
     "AccessControl": {
-        "AllowOrigin": "http://localhost:3000",
+        "AllowOrigin": "http://52.39.106.8:3000",
         "AllowMethods": "GET,PUT,POST,DELETE,OPTIONS",
         "AllowHeaders": "Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Length",
         "AllowCredentials": true,
