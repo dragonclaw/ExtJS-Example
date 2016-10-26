@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "mysql2": "^1.1.1",
-    "sequelize": "^3.24.5"
+    "sequelize": "^3.24.5",
+    "sequelize-connect": "^2.0.0"
   }
 }

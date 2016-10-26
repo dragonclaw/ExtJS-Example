@@ -1,5 +1,5 @@
-/*var mysql = require('mysql'),
-    cfg = require('./db-config');
+var mysql = require('mysql');
+var cfg = require('./db-config');
 
 function MySQL(config) {
 
@@ -55,9 +55,8 @@ function MySQL(config) {
 }
 
 global.App.database = new MySQL(cfg);
-*/
 
-var cfg = require('./db-config');
+/*var cfg = require('./db-config');
 var Sequelize = require('sequelize');
 
 function sequelize() {
@@ -70,8 +69,9 @@ function sequelize() {
             dialect: 'mysql'
         });
 
-        return this.connection;
+       return this.connection;
     };
 }
 
 global.App.database = new sequelize();
+*/
