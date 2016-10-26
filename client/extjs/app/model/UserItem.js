@@ -1,27 +1,21 @@
-Ext.define('Demo.model.TodoItem', {
+Ext.define('Demo.model.UserItem', {
     extend: 'Ext.data.Model',
 
     fields: [
         {
-            name: 'id'
+            name: 'firstName'
             //,mapping: '_id'  // IMPORTANT! Uncomment for MongoDB backend example
         },
         {
-            name: 'text'
-        },
-        {
-            name: 'complete',
-            type: 'boolean'
+            name: 'lastName'
         }
     ],
 
     proxy: {
         type: 'direct',
         api: {
-            create:  'Server.Demo.Todo.create',
-            read:    'Server.Demo.Todo.read',
-            update:  'Server.Demo.Todo.update',
-            destroy: 'Server.Demo.Todo.destroy'
+            read:    'Server.Demo.UsersApi.read',
+            update:  'Server.Demo.UsersApi.update'
         },
         reader: {
             type: 'json',

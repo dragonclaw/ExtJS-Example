@@ -28,12 +28,14 @@ Ext.define('Demo.Application', {
     ],
 
     models:[
-        'TodoItem'
+        'TodoItem',
+        'UserItem'
     ],
 
     stores: [
         'Todo',
-        'Tree'
+        'Tree',
+        'Users'
     ],
 
     launch: function(){

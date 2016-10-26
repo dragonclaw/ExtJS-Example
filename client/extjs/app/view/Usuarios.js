@@ -1,19 +1,8 @@
 Ext.define('Demo.view.Usuarios',{
-    extend: 'Ext.tree.Panel',
+    extend: 'Ext.grid.Panel',
     title: 'Usuarios',
     xtype: 'Usuarios',
-    listeners: {
-        dblclick : {
-            fn: function(dv, record, item, index, dataIndex) {
-                alert(dataIndex);
-            },
-            // You can also pass 'body' if you don't want click on the header or
-            // docked elements
-            element: 'body',
-            scope: this
-        }
-    },
-    store: {
+    store: 'Users',/*{
     fields:['firstName','lastName'],
         data:[
         { firstName: 'Lisa', lastName: "Simpsons"  },
@@ -24,9 +13,14 @@ Ext.define('Demo.view.Usuarios',{
         proxy: {
         type: 'memory'
     }
-},
+},*/
     columns: [
         { text: 'First Name',  dataIndex: 'firstName' },
         { text: 'Last Name', dataIndex: 'lastName' }
+    ],
+    plugins: [
+        Ext.create('Ext.grid.plugin.RowEditing', {
+            clicksToEdit: 2
+        })
     ]
 });
