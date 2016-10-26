@@ -7,7 +7,7 @@ Ext.define('snuuper.DirectAPI', {
     var Loader = Ext.Loader,
         wasLoading = Loader.isLoading;
 
-    var host = "http://localhost:3000";
+    var host = "http://52.39.106.8:3000";
 
 
     //Loading API
