@@ -74,7 +74,7 @@ function sequelize() {
     };
     
     this.disconnect = function(){
-        this.close();
+        this.connection.close();
     }
 }
 
