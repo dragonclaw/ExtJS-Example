@@ -15,8 +15,18 @@ Ext.define('Demo.view.Usuarios',{
     }
 },*/
     columns: [
-        { text: 'First Name',  dataIndex: 'firstName' },
-        { text: 'Last Name', dataIndex: 'lastName' }
+        { text: 'First Name',
+	  dataIndex: 'firstName',
+	  editor: {
+                allowBlank: false
+            } 
+        },
+        { text: 'Last Name',
+          dataIndex: 'lastName',
+          editor: {
+                allowBlank: false
+            }
+        }
     ],
     plugins: [
         Ext.create('Ext.grid.plugin.RowEditing', {
