@@ -1,7 +1,7 @@
 
 var Sequelize = require('sequelize');
 
-var sequelize = new Sequelize('Demo', 'root', 'root', {
+var sequelize = new Sequelize('Demo', 'root', 'urtsis03coord.', {
     host: 'localhost',
     dialect: 'mysql',
     pool: {
