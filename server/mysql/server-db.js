@@ -1,3 +1,4 @@
+/*
 var mysql = require('mysql');
 var cfg = require('./db-config');
 
@@ -55,8 +56,8 @@ function MySQL(config) {
 }
 
 global.App.database = new MySQL(cfg);
-
-/*var cfg = require('./db-config');
+*/
+var cfg = require('./db-config');
 var Sequelize = require('sequelize');
 
 function sequelize() {
@@ -71,7 +72,10 @@ function sequelize() {
 
        return this.connection;
     };
+    
+    this.disconnect = function(){
+        this.close();
+    }
 }
 
 global.App.database = new sequelize();
-*/
