@@ -66,7 +66,7 @@ function sequelize() {
     this.connection = null;
 
     this.connect = function(){
-        this.connection = new Sequelize('Demo', 'root', 'urtsis03coord.', {
+        this.connection = new Sequelize('Demo', 'root', 'root', {
             host: 'localhost',
         });
 

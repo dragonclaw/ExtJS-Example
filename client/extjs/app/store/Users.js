@@ -16,5 +16,10 @@ Ext.define('Demo.store.Users', {
             messageProperty: 'message'
         }
     },
-    autoLoad: true
+    autoLoad: true,
+    sorters: [{
+        property: 'start',
+        direction: 'DESC'
+    }]
+
 });

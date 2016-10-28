@@ -32,5 +32,12 @@ Ext.define('Demo.view.Usuarios',{
         Ext.create('Ext.grid.plugin.RowEditing', {
             clicksToEdit: 2
         })
-    ]
+    ],
+    initComponent: function(){
+        this.callParent();
+        this.on('render', this.loadStore, this);
+    },
+    loadStore: function() {
+        this.getStore().load();
+    }
 });
