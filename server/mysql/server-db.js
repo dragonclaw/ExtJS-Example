@@ -66,13 +66,14 @@ function sequelize() {
     this.connection = null;
 
     this.connect = function(){
-        this.connection = new Sequelize('Demo', 'root', 'root', {
+        this.connection = new Sequelize('Demo', 'root', 'urtsis03coord.', {
             host: 'localhost',
 	    dialect: 'mysql',
+	    port: 3306,
 	    pool: {
        		 max : 100,
-        	 min : 0,
-        	 maxIdleTime: 3600000
+        	 min : 1,
+        	 idle: 3600000
     		}
         });
 
