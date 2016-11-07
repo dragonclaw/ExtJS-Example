@@ -1,7 +1,7 @@
 
 var Sequelize = require('sequelize');
 
-var sequelize = new Sequelize('Demo', 'root', 'urtsis03coord.', {
+var sequelize = new Sequelize('Demo', 'root', 'root', {
     host: 'localhost',
     dialect: 'mysql',
     pool: {
@@ -30,10 +30,10 @@ var User = sequelize.define('user', {
 });
 
 // force: true will drop the table if it already exists
-User.sync({force: true}).then(function () {
+User.sync().then(function () {
     // Table created
     return User.create({
-        firstName: 'John',
-        lastName: 'Hancock'
+        firstName: 'another crazy wacko',
+        lastName: 'wacko3'
     });
 });
