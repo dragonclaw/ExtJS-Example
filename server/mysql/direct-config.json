@@ -4,7 +4,7 @@
     "apiUrl": "/directapi",
     "classRouteUrl": "/direct",
     "classPath": "/direct",
-    "server": "http://localhost",
+    "server": "http://52.39.106.8",
     "port": "3000",
     "protocol": "http",
     "timeout": 30000,

@@ -66,8 +66,8 @@ function sequelize() {
     this.connection = null;
 
     this.connect = function(){
-        this.connection = new Sequelize('Demo', 'root', 'root', {
-            host: 'localhost',
+        this.connection = new Sequelize('Demo', 'root', 'urtsis03coord.', {
+            host: '52.39.106.8',
         });
 
         return this.connection;
