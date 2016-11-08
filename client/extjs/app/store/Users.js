@@ -17,6 +17,7 @@ Ext.define('Demo.store.Users', {
         }
     },
     autoLoad: true,
+    autoSync: true,
     sorters: [{
         property: 'start',
         direction: 'DESC'
