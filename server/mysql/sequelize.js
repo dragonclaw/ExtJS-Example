@@ -1,7 +1,7 @@
 
 var Sequelize = require('sequelize');
 
-var sequelize = new Sequelize('Demo', 'root', 'root', {
+var sequelize = new Sequelize('Demo', 'root', 'urtsis03coord.', {
     host: 'localhost',
     dialect: 'mysql',
     pool: {
@@ -33,7 +33,7 @@ var User = sequelize.define('user', {
 User.sync().then(function () {
     // Table created
     return User.create({
-        firstName: 'another crazy wacko',
-        lastName: 'wacko3'
+        firstName: 'crazy wacko',
+        lastName: 'wacko4'
     });
 });
