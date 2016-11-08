@@ -14,9 +14,12 @@ var UsersApi  = {
         });
     },
     update: function (params, callback) {
-        db.User.findOne({where: {name: params.firtsName}}).then(function (person) {
-            person.firstName = 'jane';
-            console.log(person.firstName);// 'jane'
+        db.User.findOne({where: {id: params.id}}).then(function (person) {
+            person.firstName = params.firstName;
+            console.log(person.firstName);//
+            person.updateAttributes({
+                firstName:params.firstName
+            });
         });
     }
 };
