@@ -16,10 +16,13 @@ var UsersApi  = {
     update: function (params, callback) {
         db.User.findOne({where: {id: params.id}}).then(function (person) {
             person.firstName = params.firstName;
+	    person.lastName = params.lastName;
             console.log(person.firstName);//
             person.updateAttributes({
-                firstName:params.firstName
+                firstName:params.firstName,
+		lastName:params.lastName
             });
+	return callback();
         });
     }
 };
